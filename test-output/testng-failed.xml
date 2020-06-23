@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="demoProject.SeleniumFramework.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="demoProject.SeleniumFramework.ValidateHome">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+          <include name="home"/>
+        </methods>
+      </class> <!-- demoProject.SeleniumFramework.ValidateHome -->
+      <class name="demoProject.SeleniumFramework.ValidateRegister">
+        <methods>
+          <include name="initialize"/>
+          <include name="register" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- demoProject.SeleniumFramework.ValidateRegister -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
